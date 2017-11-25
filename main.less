@@ -125,35 +125,51 @@ button {
 	    margin: 10% auto; 
 	    padding: 1.5rem;
 	    border: 1px solid #888;
-	    width: 50%; 
+	    width: 45rem; 
 	    h2 {
 	    	font-size:1.875rem;
 			font-weight: 700;
 			text-align: center;
 	    }
 	    form {
-	    	margin:5% 9% 2% 9%;
+	    	margin:4.5rem 5.0rem 2rem 8.0rem;
+	    	.flex {
+	    		margin:0;
+	    		padding:0;
+	    		display:flex;
+	    		flex-wrap: wrap;
+	    		justify-content: space-between;
+	    	}
 	    	p {
 	    		color:#747474;
 	    	}
 	    	div {
-	    		display:inline-block;
-	    		min-width:35%;
-	    		&:first-child {
-	    			margin-right:1rem;
+	    		flex-basis:16rem;
+	    		input[name="fullname"] {
+	    			margin-right: 2.5rem;
 	    		}
 	    		label{
 	    			display:block;
 	    			font-size: 1rem;
 	    		}
+	    		textarea {
+	    			width:70%;
+    				resize: none;
+    				min-height:9rem;
+    				width:28.5rem;
+				}
+				textarea, input {
+    				box-sizing: border-box;
+    				background-color: #fafbfd;
+    				border: 1px solid #d8d9db;
+				}
+				input {
+					height:2.5rem;
+				}
 	    	}
-
-	    	fieldset {
-
-	    	}
-	    	textarea {
-    			resize: none;
-			}
+	    	a {
+	    		display:block;
+	    	}	
 	    }
 	}
 }
