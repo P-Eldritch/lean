@@ -36,17 +36,26 @@
 					<span class="x-button">&times;</span>
    					 <h2>Your details here</h2>
    					 <form class="contact-form" name="contact-form" action="" method="post" enctype="application/x-www-form-urlencoded">
-   					 	<label for="fullname">Full name *</label>
-   					 	<input type="text" name="fullname" id="fullname" required="required">
+   					 	<fieldset>
+   					 		<div>
+   					 		<label for="fullname">Full name *</label>
+	   					 	<input type="text" name="fullname" id="fullname" required="required">	
+   					 		</div>
 
-   					 	<label for="phone">Phone</label>
-   					 	<input type="tel" name="phone" id="phone">
+   					 		<div>
+	   					 	<label for="phone">Phone</label>
+	   					 	<input type="tel" name="phone" id="phone">
+	   					 	</div>
 
-   					 	<label for="email">Email *</label>
-   					 	<input type="email" name="email" id="email" required="required">
-
+	   					 	<div>
+	   					 	<label for="email">Email *</label>
+	   					 	<input type="email" name="email" id="email" required="required">
+	   					 	</div>
+   					 	</fieldset>
+   					 	<div>
    					 	<label for="message">Your message</label>
    					 	<textarea name="message" id="message"></textarea>
+   					 	</div>
 
    					 	<p>* Required</p>
    		

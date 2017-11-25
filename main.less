@@ -74,6 +74,7 @@ a, ul {
 			font-size:1.875rem;
 			font-weight: 700;
 			padding-bottom:2.75rem;
+			     letter-spacing: -.02em; 
 		/*	margin:0;*/
 		}
 		p {
@@ -121,23 +122,40 @@ button {
 	}
 	.popup-content, .popup-content-2 {
 	    background-color: #fff;
-	    margin: 19% auto; 
-	    padding: 20px;
+	    margin: 10% auto; 
+	    padding: 1.5rem;
 	    border: 1px solid #888;
-	    max-width: 50%; 
+	    width: 50%; 
 	    h2 {
 	    	font-size:1.875rem;
 			font-weight: 700;
 			text-align: center;
 	    }
-	    input {
-	    	display:block;
+	    form {
+	    	margin:5% 9% 2% 9%;
+	    	p {
+	    		color:#747474;
+	    	}
+	    	div {
+	    		display:inline-block;
+	    		min-width:35%;
+	    		&:first-child {
+	    			margin-right:1rem;
+	    		}
+	    		label{
+	    			display:block;
+	    			font-size: 1rem;
+	    		}
+	    	}
+
+	    	fieldset {
+
+	    	}
+	    	textarea {
+    			resize: none;
+			}
 	    }
 	}
-}
-
-textarea {
-    resize: none;
 }
 
 .products-section {
