@@ -184,23 +184,25 @@ button {
 				}
 	    	}
 	    	.check-box {
+	    		position:relative;
 	    		text-align: center;
 	    		padding-bottom:;
 	    	}
 	    	label {
 				font-size:1.25rem;
 			}
-			input[type="checkbox"] + label::before {
+			
+			input[type="checkbox"] + label:before {
    				content: "";
 			    display: inline-block;
-			    vertical-align: -50%;
+			    vertical-align: -70%;
 			    height: 2rem;
 			    width: 2rem;
 			    background-color: #f9fafc;
 			    border: 1px solid #d8d9db;
 			    margin-right: 0.5em;
 			}
-			input[type="checkbox"]:checked + label::after {
+			input[type="checkbox"]:checked + label:after {
   				content: '';
    				position: absolute;
     			width: 1.5rem;
@@ -215,7 +217,8 @@ button {
 			}
 			input[type="checkbox"] {
     			position: absolute;
-    			left: -999rem;
+    			left: 38%;
+    			outline:unset;
 			}
 
 			input[type="checkbox"] + label {

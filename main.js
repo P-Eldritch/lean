@@ -1,5 +1,5 @@
 
-var button = document.querySelector(".popup-button");
+var button = document.querySelectorAll(".popup-button");
 var popupBox = document.querySelector(".popup-box");
 var closing = document.querySelector(".x-button");
 var okButton = document.querySelector(".ok");
@@ -14,11 +14,12 @@ document.querySelector(".main-nav").addEventListener("click", function(){
 	this.classList.toggle("open");
 });
 //open pop-up window on click
-button.addEventListener("click", function(){
+for(var i = 0; i<button.length; i++) {
+button[i].addEventListener("click", function(){
 	popupBox.style.display = "block";
-	popupContent2.style.display = "block";
-	popupContent.style.display = "none";
-});
+	popupContent.style.display = "block";
+	popupContent2.style.display = "none";
+});}
 
 //close pop-up window when 'x' is clicked
 closing.addEventListener("click", function(){

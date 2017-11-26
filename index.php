@@ -18,7 +18,7 @@
 				<li><a href="index.php">Home</a></li>
 				<li><a href="#products">Products</a></li>
 				<li><a href="#case">Case</a></li>
-				<li><a href="#contact">Contact</a></li> 
+				<li><a href="#contact" class="popup-button">Contact</a></li> 
 			<!-- 	fix contact path; it should lead to the pop up window -->
 			</ul>
 		</nav>
