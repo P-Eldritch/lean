@@ -11,7 +11,7 @@
 <body>
 	<header>
 		<div class="sticky-menu">
-		<a class="home-logo" href="index.php"><img src="Logo.jpg" alt="company logo"></a>
+		<a class="home-logo" href="index.php"><img src="Images/Logo.jpg" alt="company logo"></a>
 		<nav class="main-nav">
 			<div class="burger"></div>
 			<ul>
@@ -24,7 +24,7 @@
 		</nav>
 		</div>
 		<div class="header-img">
-		<img src="hero.jpg">
+		<img src="Images/hero.jpg">
 			<div class="text-box">
 				<h1>Welcome to Leantech</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco do eiusmod tempor incididunt.</p>
@@ -81,15 +81,15 @@
 		<h2>Products</h2>
 		<div class="figure-container">
 			<figure>
-				<img src="3Products.jpg" alt="a representative picture for full-stack consultancy">
+				<img src="Images/3Products.jpg" alt="a representative picture for full-stack consultancy">
 				<figcaption>Full-stack consultancy</figcaption>
 			</figure>
 			<figure>
-				<img src="2Products.jpg" alt="a representative picture for market analysis">
+				<img src="Images/2Products.jpg" alt="a representative picture for market analysis">
 				<figcaption>Market analysis</figcaption>
 			</figure>
 			<figure>
-				<img src="1Products.jpg" alt="a representative picture for design">
+				<img src="Images/1Products.jpg" alt="a representative picture for design">
 				<figcaption>Design</figcaption>
 			</figure>
 		</div>
@@ -104,7 +104,7 @@
 			consequat.</p>
 			<a href="https://www.leantech.pro/" target="_blank" title="Go to https://www.leantech.pro/">Learn more</a>
 		</div>
-		<img src="Case.jpg" alt="a picture proving how much we care">
+		<img src="Images/Case.jpg" alt="a picture proving how much we care">
 	</section>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
