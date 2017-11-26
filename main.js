@@ -16,8 +16,8 @@ document.querySelector(".main-nav").addEventListener("click", function(){
 //open pop-up window on click
 button.addEventListener("click", function(){
 	popupBox.style.display = "block";
-	popupContent.style.display = "block";
-	popupContent2.style.display = "none";
+	popupContent2.style.display = "block";
+	popupContent.style.display = "none";
 });
 
 //close pop-up window when 'x' is clicked

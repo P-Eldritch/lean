@@ -122,7 +122,8 @@ button {
     	cursor: pointer;
     	opacity:0.6;
 	}
-	.popup-content, .popup-content-2 {
+/* uzmesti shadow ant dalyku*/	
+	.popup-content {
 	    background-color: #fff;
 	    margin: 5vh auto; 
 	    padding: 1.5rem;
@@ -135,7 +136,7 @@ button {
 			margin-bottom:2rem;
 	    }
 	    form {
-	    	margin:0 5.0rem 2rem 8.0rem;
+	    	margin:0 5.0rem 0 8.0rem;
 	    	.flex {
 	    		margin:0;
 	    		padding:0;
@@ -157,7 +158,7 @@ button {
 	    			font-size: 1rem;
 	    			margin:1.25rem 0 0.75rem 0;
 	    		}
-/*	    		&:nth-of-type(4) label {
+				/*	    		&:nth-of-type(4) label {
 	    			margin:2rem 0 0.75rem 0;
 	    			}
 	    		&:nth-of-type(5) label {
@@ -205,8 +206,8 @@ button {
     			width: 1.5rem;
     			height: 0.5rem;
    				background-color: #f9fafc;
- 				top: 0.3rem;
-    			left: 0.25rem;
+ 				top: 0.5rem;
+    			left: 11.6rem;
    				border: 3px solid #d4191f;
    				border-top: none;
    				border-right: none;
@@ -224,12 +225,47 @@ button {
 			}
 			.submit-div {
 				text-align: center;
+				button {
+					margin:2rem 0 0 0;
+				}
 			}
 	    	a {
 	    		display:block;
+	    		text-align: center;
+	    		margin:1.5rem 0;
+	    		text-decoration: underline;
+	    		font-size: 1rem;
 	    	}
 	    }
 	}
+
+	.popup-content-2 {
+		background-color: #fff;
+	    margin: 20vh auto; 
+	    border: 1px solid #888;
+	    width: 48rem; 
+		h2 {
+	    	font-size:1.875rem;
+			font-weight: 700;
+			text-align: center;
+			margin:7rem 0 1.5rem 0;
+	    }
+	    p {
+	    	font-size: 1rem;
+	    	color:#404040;
+	    	text-align: center;
+	    }
+	    .ok-button {
+	    	text-align: center;
+	    	margin:3rem 0 6.25rem 0;
+	    	button {
+	    		padding:1.25rem 2.5rem;
+	    		margin:0;
+	    	}
+	    }
+
+	}
+
 }
 
 .products-section {

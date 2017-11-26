@@ -66,14 +66,14 @@
    					 	<div class="submit-div">
    					 	<button class="submit-button" type="submit">Get in touch</button></div>
    					 	<!-- add terms and conds psl -->
-   					 	<a href="#" target="_blank">Terms and conditions</a>
+   					 	<a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank" title="click to learn more">Terms and conditions</a>
    					 </form>
 				</div>
 				<div class="popup-content-2">
-					<span class="x-button">&times;</span>
 					<h2>Thank you for you inquiry</h2>
 					<p>We will contact you within 24h.</p>
-					<button class="ok">OK</button>
+					<div class="ok-button">
+					<button class="ok">OK</button></div>
 				</div>
 			</div>
 	</header>
@@ -104,7 +104,7 @@
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
 	<!-- 		add some kind of link -->
-			<a href="#">Learn more</a>
+			<a href="https://www.leantech.pro/" target="_blank" title="Go to https://www.leantech.pro/">Learn more</a>
 		</div>
 		<img src="Case.jpg" alt="a picture proving how much we care">
 	</section>
