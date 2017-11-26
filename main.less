@@ -130,7 +130,7 @@ button {
 /* uzmesti shadow ant dalyku*/	
 	.popup-content {
 	    background-color: #fff;
-	    margin: 5vh auto; 
+	    margin: 10vh auto; 
 	    padding: 1.5rem;
 	    border: 1px solid #888;
 	    width: 45rem; 
@@ -330,61 +330,121 @@ button {
 	}
 }
 
+@media all and (max-width : 1367px) {
+	.header-img {
+		.text-box {
+			width:22rem;
+		}
+		h1 {
+			font-size:2rem;
+			padding-bottom:2.25rem;
+		}
+		p {
+			padding-bottom:2.25rem;
+		}
+	}
+}
 
-/*fix style, padaryti, kad butu 3 pagaliukai gal?*/
- @media all and (min-width : 320px) and (max-width : 568px) {
+@media all and (max-width : 1000px) { 
+	html {
+		font-size:14px;
+	}
+}
 
-	.main-nav{
-	    	position:relative;
-	        right: 2rem;
+@media all and (max-width : 800px) { 
+	.case-section {
+		img {
+			position:static;
+			width:40%;
+			padding: 0 30%;
+			margin: 3% 0;
+		}
+		 .column {
+		    width: 40%;
+		    padding: 9% 30% 3% 30%;
+		}
+	}
+	.header-img {
+		overflow:hidden;
+		img {
+			width:auto;
+			height:352px;
+		}
 	}
 
-	.burger{
-	    cursor: pointer;
-	    display: block;
-	}
+}
 
-	.burger:before,
-	.burger:after{
-		content: "";
-	    background: #EEEEEE;
-	    display: block;
-	    width: 2.5rem;
-	    height: 0.5rem;
-	    margin-bottom: 0.5rem;
-	    position: relative;
-	    top: 0;
-	    transition: all ease-in-out 0.4s;
+@media all and (min-width : 320px) and (max-width : 600px) {
+	html {
+		font-size: 12px;
 	}
-
-	.main-nav.open .burger:after{
-	    transform: rotate(135deg);
-	    top: -0.5rem;
-		right: -4.5rem;
+	.case-section {
+		img, .column {
+			width:60%;
+			padding-right:20%;
+			padding-left: 20%;
+		}
 	}
-	.main-nav.open .burger:before{
-	    transform: rotate(-135deg);
-	    top: 0.5rem;
-		right: -4.5rem;
+	.header-img .text-box {
+		left:10%;
 	}
-
-	header nav ul {
-		display: none;
-		color: #fff;
+	/*burger*/
+	.main-nav {
+	    position:relative;
+	    /*right: 2rem;*/
+	    ul {
+			display: none;
+			color: #fff;
+			li {
+			    margin: 1rem auto;
+			}
+		}   
+	    .burger{
+			cursor: pointer;
+			display: block;
+		}
+		.burger:before,
+		.burger:after{
+			content: "";
+		    background: #EEEEEE;
+		    display: block;
+		    width: 2.5rem;
+		    height: 0.5rem;
+		    margin-bottom: 0.5rem;
+		    position: relative;
+		    top: 0;
+		    transition: all ease-in-out 0.4s;
+		}
 	}
-
-	.main-nav.open ul {
-		position: relative;
-		display: block;
-		text-align: right;
-		right: -1.5rem;
+	.main-nav.open {
+		padding-right: 2rem;
+		.burger:after{
+		    transform: rotate(135deg);
+		    top: -0.5rem;
+			right: -4.5rem;
+		}
+		.burger:before{
+		    transform: rotate(-135deg);
+		    top: 0.5rem;
+			right: -4.5rem;
+		}
+		ul {
+			position: relative;
+			display: block;
+			text-align: right;
+			right: -1.5rem;
+			li {
+				display:block;
+				&:not(:last-child) {
+				padding-right:0;
+				}
+				a:hover {
+					color:#d4191f;
+				}
+			}
+		}
 	}
-
-	header nav ul li {
-	    margin: 1rem auto;
-	}
-
-	header {
+	.sticky-menu {
 		align-items: unset;
 	}
 }
