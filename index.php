@@ -52,7 +52,7 @@
 	   					 	<input type="email" name="email" id="email" required="required">
 	   					 	</div>
 	   					 </div>
-   					 	<div>
+   					 	<div class="message-div">
    					 	<label for="message">Your message</label>
    					 	<textarea name="message" id="message"></textarea>
    					 	</div>
@@ -70,7 +70,7 @@
    					 </form>
 				</div>
 				<div class="popup-content-2">
-					<h2>Thank you for you inquiry</h2>
+					<h2>Thank you for your inquiry</h2>
 					<p>We will contact you within 24h.</p>
 					<div class="ok-button">
 					<button class="ok">OK</button></div>
