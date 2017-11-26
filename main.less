@@ -1,5 +1,5 @@
 /*Less*/
-/* normalize and reset * taken from https://necolas.github.io/normalize.css/ 
+/* normalize and reset; * taken from https://necolas.github.io/normalize.css/ 
  * and  https://meyerweb.com/eric/tools/css/reset */
 
 @import "reset.css";
@@ -9,12 +9,26 @@
 /*setting font family to the whole document*/
 html {
 	font-family: 'Lato';
+	font-size:16px;
 }
 
 a, ul {
     text-decoration: none;
 }
 
+/*defining buttons*/
+button {
+	border:none;
+	outline:none;
+	padding:1.25rem;
+	color:#FFF;
+	font-size:1.25rem;
+	text-align: center;
+	background-color: #d4191f;
+	cursor:pointer;
+}
+
+/*styling fixed navigation menu*/
 .sticky-menu {
 	position:fixed;
 	width:100%;
@@ -32,7 +46,6 @@ a, ul {
 		width:7.5rem;
 		margin-left:2.75rem;
 	}
-
 	.main-nav {
 		list-style-type: none;
 		margin-right:2.75rem;
@@ -54,6 +67,7 @@ a, ul {
 	}
 }
 
+/*styles for the main image and text on it*/
 .header-img {
 	position: relative;
 	img {
@@ -62,7 +76,6 @@ a, ul {
 		margin-top:4.75rem;
 		z-index:-99;
 	}
-	/*fix it*/
 	.text-box {
 		display: flex;
 	    flex-direction: column;
@@ -73,7 +86,7 @@ a, ul {
 		width:24rem;
 		height:100%;
 		color:#FFF;
-	}
+
 		h1 {
 			font-size:2.25rem;
 			font-weight: 700;
@@ -89,20 +102,10 @@ a, ul {
 		button {
 			width:50%;
 		}
+	}
 }
 
-/*fix button; it terribly breaks when resized*/
-button {
-	border:none;
-	outline:none;
-	padding:1.25rem;
-	color:#FFF;
-	font-size:1.25rem;
-	text-align: center;
-	background-color: #d4191f;
-	cursor:pointer;
-}
-
+/*pop up window*/
 .popup-box {
 	overflow:scroll;
     display: none; 
@@ -114,6 +117,7 @@ button {
     height: 100%; 
     background-color: rgba(0,0,0,0.5);
 
+    /*x for closing*/
     .x-button {
     	color: #000;
     	font-size: 3rem;
@@ -127,9 +131,10 @@ button {
     	cursor: pointer;
     	opacity:0.6;
 	}
-/* uzmesti shadow ant dalyku*/	
+	/*contact form*/
 	.popup-content {
 	    background-color: #fff;
+	    box-shadow:-0.05rem 0.25rem 0.35rem 0rem rgba(0, 0, 0, 0.4);
 	    margin: 10vh auto; 
 	    padding: 1.5rem;
 	    border: 1px solid #888;
@@ -188,7 +193,7 @@ button {
 	    	label {
 				font-size:1.25rem;
 			}
-			
+			/*changing color and box size for checkbox*/
 			input[type="checkbox"] + label:before {
    				content: "";
 			    display: inline-block;
@@ -239,8 +244,10 @@ button {
 	    }
 	}
 
+	/*success window after form submission*/
 	.popup-content-2 {
 		background-color: #fff;
+		box-shadow:-0.05rem 0.25rem 0.35rem 0rem rgba(0, 0, 0, 0.4);
 	    margin: 20vh auto; 
 	    border: 1px solid #888;
 	    width: 48rem; 
@@ -328,6 +335,7 @@ button {
 	}
 }
 
+/*-------------------------MEDIA QUERIES----------------------------*/
 @media all and (max-width : 1367px) {
 	.header-img {
 		.text-box {
@@ -371,6 +379,8 @@ button {
 	}
 
 }
+
+/*query for pop up window*/
 @media all and (max-width : 700px) {
 	.popup-box .popup-content form div:not(:last-of-type) label {
 		margin:1.0rem 0 0.5rem 0;

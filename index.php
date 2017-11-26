@@ -19,7 +19,7 @@
 				<li><a href="#products">Products</a></li>
 				<li><a href="#case">Case</a></li>
 				<li><a href="#contact" class="popup-button">Contact</a></li> 
-			<!-- 	fix contact path; it should lead to the pop up window -->
+	
 			</ul>
 		</nav>
 		</div>
@@ -65,7 +65,6 @@
    					 	</div>
    					 	<div class="submit-div">
    					 	<button class="submit-button" type="submit">Get in touch</button></div>
-   					 	<!-- add terms and conds psl -->
    					 	<a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank" title="click to learn more">Terms and conditions</a>
    					 </form>
 				</div>
@@ -103,7 +102,6 @@
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
-	<!-- 		add some kind of link -->
 			<a href="https://www.leantech.pro/" target="_blank" title="Go to https://www.leantech.pro/">Learn more</a>
 		</div>
 		<img src="Case.jpg" alt="a picture proving how much we care">
