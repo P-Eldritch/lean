@@ -7,12 +7,13 @@ var popupContent = document.querySelector(".popup-content");
 var popupContent2 = document.querySelector(".popup-content-2");
 var contactForm = document.querySelector(".contact-form");
 
+/*--------------------------EVENTS----------------------------*/
 
 //burger
-
 document.querySelector(".main-nav").addEventListener("click", function(){
 	this.classList.toggle("open");
 });
+
 //open pop-up window on click
 for(var i = 0; i<button.length; i++) {
 button[i].addEventListener("click", function(){
@@ -23,21 +24,22 @@ button[i].addEventListener("click", function(){
 
 //close pop-up window when 'x' is clicked
 closing.addEventListener("click", function(){
-	popupBox.style.display = "none";
-	contactForm.reset();
+	close();
 });
-
 
 //close popup window when "click" happens outside that window
 document.addEventListener("click", function(){
 	if (event.target === popupBox || event.target === okButton) {
-        popupBox.style.display = "none";
-        contactForm.reset();
+		close();
      }
-})
+});
 
-//VALIDATE EMAIL!!!
-
+function close() {
+	popupBox.style.display = "none";
+	contactForm.reset();
+};
+/*----------------------AJAX+jQUERY--------------------------*/
+//submit form
 $(contactForm).submit(function(e) {
 
     var url = "configDB.php"; 
@@ -50,12 +52,9 @@ $(contactForm).submit(function(e) {
            {
             popupContent.style.display = "none";
      		popupContent2.style.display = "block";
-           },
-           fail: function(data)
-           {
-            alert("an error occured; try again");
            }
          });
 
-    e.preventDefault(); // avoid to execute the actual submit of the form.
+// avoid sending form
+    e.preventDefault(); 
 });
