@@ -5,7 +5,7 @@
 	<meta name="description" content="a landing page">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lean Technologies</title>
-	<link rel="icon" href="icon.jpg">
+	<link rel="icon" href="Images/icon.jpg">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
