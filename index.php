@@ -27,7 +27,7 @@
 		<img src="hero.jpg">
 			<div class="text-box">
 				<h1>Welcome to Leantech</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco do eiusmod tempor incididunt.</p>
 				<button class="popup-button">Get in touch</button>
 			</div>	
 		</div>
