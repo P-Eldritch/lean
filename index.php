@@ -58,11 +58,13 @@
    					 	</div>
 
    					 	<p>* Required</p>
-   		
+   						<div class="check-box">
    					 	<input type="checkbox" name="checkbox" value="check" id="agree" required="required">
-   					 	<label for="agree">Agree on terms</label>
 
-   					 	<button clas="submit-button" type="submit">Get in touch</button>
+   					 	<label for="agree">Agree on terms</label>
+   					 	</div>
+   					 	<div class="submit-div">
+   					 	<button class="submit-button" type="submit">Get in touch</button></div>
    					 	<!-- add terms and conds psl -->
    					 	<a href="#" target="_blank">Terms and conditions</a>
    					 </form>
